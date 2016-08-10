@@ -13,10 +13,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   
-  <script type='text/javascript' src="http://felek.cns.umass.edu:4444/indTagViz/WB/dev/js/functions.js"></script>
-  <script type='text/javascript' src="http://felek.cns.umass.edu:4444/indTagViz/WB/dev/js/globalVariables.js"></script>
+  <script type='text/javascript' src="http://felek.cns.umass.edu:4444/wbTagViz/js/functions.js"></script>
+  <script type='text/javascript' src="http://felek.cns.umass.edu:4444/wbTagViz/js/globalVariables.js"></script>
   
-  <link rel="stylesheet" href="http://felek.cns.umass.edu:4444/indTagViz/WB/dev/css/indTagViz.css">  
+  <link rel="stylesheet" href="http://felek.cns.umass.edu:4444/wbTagViz/css/indTagViz.css">  
   
 </head>
 
@@ -290,7 +290,7 @@ svgContainer.append('rect')
   });
           
 
-d3.csv("/forceV4/WB/coreDataOut.csv", typeCoreData, function (error,cd){
+d3.csv("/coreDataOut.csv", typeCoreData, function (error,cd){
   if (error) throw error;
   
   var cd = getDataEnc(cd);
